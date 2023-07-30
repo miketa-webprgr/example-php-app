@@ -6,7 +6,15 @@
 git clone git@github〜　（サンプルリポジトリをforkして、自分のリポジトリからクローンしてください）
 cd example-app # リポジトリ名を変更していたら変更してください
 
+# Windowsの方のみ実行
+cp .env.example-windows .env
+rm .env.example-windows && rm .env.example-windows
+
+# Macの方のみ実行
 cp .env.example-mac .env
+rm .env.example-windows && rm .env.example-windows
+cp vite.config-mac.js vite.config.js
+rm vite.config.js
 
 #　以下はまとめてコピペして実行してください
 docker run --rm \
