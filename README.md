@@ -6,7 +6,7 @@
 git clone git@github〜　（サンプルリポジトリをforkして、自分のリポジトリからクローンしてください）
 cd example-app # リポジトリ名を変更していたら変更してください
 
-cp .env.example-mac .env
+cp .env.example .env
 
 #　以下はまとめてコピペして実行してください
 docker run --rm \
