@@ -1,10 +1,9 @@
 # PIサマーインターン（25卒）のサンプルアプリ
 
-## セットアップ手順（上から順番に実行）
+## 初回セットアップ手順（上から順番に実行）
 
 ```sh
-git clone git@github〜　（サンプルリポジトリをforkして、自分のリポジトリからクローンしてください）
-cd example-app # リポジトリ名を変更していたら変更してください
+# 作業ディレクトリに移動して作業を進めてください 
 
 cp .env.example .env
 
@@ -18,7 +17,7 @@ docker run --rm \
 
 docker-compose up -d
 docker-compose exec laravel.test php artisan key:generate
-docker-compose exec laravel.test php artisan migrate:fresh --seed
+docker-compose exec laravel.test php artisan migrate:fresh
 docker-compose exec laravel.test npm install
 docker-compose exec laravel.test npm run dev
 ```
